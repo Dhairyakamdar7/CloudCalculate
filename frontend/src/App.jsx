@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     // Fetch pricing data from backend
-    axios.get('http://localhost:5000/api/pricing')
+    axios.get('/api/pricing')
       .then(res => {
         setPricing(res.data);
         setLoading(false);
